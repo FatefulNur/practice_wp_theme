@@ -1,0 +1,35 @@
+.sunset-sidebar-preview,
+.sunset-general-form {
+    float: left;
+}
+.sunset-sidebar-preview {
+    width: 280px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.sunset-username,
+.sunset-desc {
+    font-weight: 100;
+    color: #fff;
+}
+.sunset-username {
+    font-size: 24px;
+    margin: 0px 0px 10px;
+}
+.sunset-desc {
+    font-size: 13px;
+    margin: 0px 0px 20px;
+}
+.img-container .propic {
+    height: 122px;
+    width: 122px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

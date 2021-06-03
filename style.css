@@ -1,0 +1,306 @@
+/*
+Theme Name: Twenty Crincket
+Text Domain: twentycricket
+Version: 1.7
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
+Author: the WordPress team
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+body {
+	font-family: sans-serif;}
+body ul {
+	list-style: none;
+	padding: 0;margin: 0;
+}
+#ami-id a {
+	color: white;
+	text-decoration: none;
+}
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+.rop {
+	display: flex;
+	flex-wrap: wrap;
+}
+.fea-img img {
+	width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 5px;
+
+}
+	span.sub { 
+		font-family: sans-serif;
+		font-size: 12px;
+		padding: 2px;
+		display: block;
+	}
+
+	h4.logo {
+		display: inline;
+		font-size: 22px;
+		font-family: cursive;
+		margin: 0;
+		padding: 16px;
+	}
+
+	li.divider {
+		background: white;
+		max-width: 60px;
+		height: 1px;
+		margin: 20px 0;
+	}
+	ul#menu-mega-menu > li > a {
+		padding: 15px 20px;
+		display: inline-block;
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+	div#ami-id {
+		background: #6984d0;
+		display: flex;
+		justify-content: space-between;
+	}
+	ul#menu-mega-menu {
+		display: flex;
+		position: relative;
+	}
+	ul#menu-mega-menu > li.active {
+		background: #325b8e;
+	}
+	ul#menu-mega-menu > li{
+		position: relative;
+		transition: all 0.1s;
+	}
+	ul#menu-mega-menu > li.mega-menu {
+		position: static;
+	}
+	
+	
+	ul#menu-mega-menu > li:hover, 
+	ul#menu-mega-menu > li:focus {
+		background: #325b8e;
+	}
+	ul#menu-mega-menu > li ul.sub-menu,
+	ul#menu-mega-menu > li ul.row {
+		min-width: 280px;
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		right: 0;
+		background: #325b8e;
+		transition: all 0.5s;
+	}
+	.row{
+		min-width: 988px !important;
+		padding: 15px;
+	}
+	
+	.sub-menu {
+		padding: 15px;
+	}
+	.col-sm-3 {
+		width: 230px;
+    display: block;
+    margin-right: 17px;
+    float: left;
+	}
+	.col-sm-3:not(:first-of-type)::after {
+		display: block;
+		position: absolute;
+		top: 0;
+		margin-left: -10px;
+		content: '';
+		width: 1px;
+		background-color: #eee;
+		height: 100%;
+	}
+	.col-sm-3:last-of-type {
+		margin-right: 0;
+	}
+	.col-sm-3 > ul > li {
+		margin-bottom: 10px;
+	}
+	ul#menu-mega-menu > li:hover ul.sub-menu,
+	ul#menu-mega-menu > li:hover ul.row {
+		visibility: visible;
+		opacity: 1;
+	}
+	.desc a {
+		display: none;
+	}
+	
+.dropdown-submenu:hover > ul.sub-menu.dropdown-menu {
+	display: block;
+} 
+.image-st {
+    height: 415px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    background-size: cover;
+}
+a.btn.btn-lg.btn-default {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+	font-size: 25px;
+    width: 10%;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+	cursor: pointer;
+}
+footer.main-footer {
+    background: #ccc;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+	margin-top: 20px;
+}
+i.fas.fa-sync-alt {
+	display: block;
+	font-size: 30px;
+}
+.sunset-post-container article {
+	animation: something;
+}
+.sunset-post-container article.reveal {
+	animation: something;
+}
+.sunset-sidebar {
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9;
+	background-color: #1f1f1f;
+	color: #fff;
+	bottom: 0;
+	max-width: 280px;
+	width: 100%;
+}
+.sidebar-scroll {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.sidebar-overlay.open {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	z-index: 3;
+}
+
+.sunset-sidebar-preview,
+.sunset-general-form {
+    float: left;
+}
+.sunset-sidebar-preview {
+    width: 280px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.sunset-sidebar a {
+	color: #eee;
+	text-decoration: none;
+}
+.sunset-sidebar a:hover {
+	color: #bababa;
+}
+.sunset-username,
+.sunset-desc {
+    font-weight: 100;
+    color: #fff;
+}
+.sunset-username {
+    font-size: 24px;
+    margin: 0px 0px 10px;
+	text-align: center;
+}
+.sunset-desc {
+    font-size: 13px;
+    margin: 0px 0px 20px;
+	text-align: center;
+}
+.img-container .propic {
+    height: 122px;
+    width: 122px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sunset-widget {
+	margin: 30px 0 50px;
+	padding: 0px 20px;
+}
+.sunset-widgettitle {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+	background: #303030;
+	padding: 8px;
+	border-radius: 20px;
+	line-height: 1em;
+}
+.sunset-sidebar ul {
+	margin-left: 25px;
+}
+.sunset-sidebar ul li {
+	list-style-type: disc;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+.tagcloud {
+	text-align: center;
+}
+.tagcloud a {
+	display: inline-block;
+	background-color: #7d7d7d;
+	padding: 1px 9px;
+	border-radius: 10px;
+	color: #eee;
+}
+.has-error input, 
+.has-error textarea {
+	border: 1px solid #c92104;
+}
+.form-control-msg {
+	display: none;
+}
+.has-error .form-control-msg {
+	display: block;
+}
+.js-show-feedback {
+	display: block;
+}
